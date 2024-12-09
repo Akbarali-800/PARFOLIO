@@ -1,0 +1,262 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1em;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 0;
+    background: #121212;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .logo h1 {
+    font-size: 1.8em;
+    color: #ff8c00;
+}
+
+header .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+header .nav-links li {
+    margin: 0 1em;
+}
+
+header .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header .nav-links a:hover {
+    color: #ff8c00;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(120deg, #ff8c00, #1e90ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero .highlight {
+    color: #ffd700;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    margin-top: 1em;
+    background: #ff8c00;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #ffd700;
+    color: #000;
+}
+
+/* About Section */
+.about-section {
+    padding: 3em 1em;
+    background: #121212;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 3em 1em;
+    background: #181818;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+}
+
+.project {
+    background: #202020;
+    padding: 2em;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(255, 140, 0, 0.5);
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 3em 1em;
+    background: #121212;
+    text-align: center;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-section form input,
+.contact-section form textarea,
+.contact-section form button {
+    width: 100%;
+    margin: 1em 0;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-section form button {
+    background: #ff8c00;
+    color: #ffffff;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.contact-section form button:hover {
+    background: #ffd700;
+    color: #000;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #181818;
+    color: #ffffff;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1em;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+    background: #121212;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .logo h1 {
+    font-size: 1.5em;
+    color: #ff8c00;
+    margin: 0;
+}
+
+header .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .nav-links li {
+    margin: 0 1em;
+}
+
+header .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header .nav-links a:hover {
+    color: #ff8c00;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.hero-content {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slide-in 1s forwards;
+}
+
+@keyframes slide-in {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hero .highlight {
+    color: #ffd700;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    margin-top: 1em;
+    background: #ff8c00;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #ffd700;
+    color: #000;
+}
